@@ -50,5 +50,5 @@ body {
 }
 
 .cursor {
-  cursor: url("./assets/cursor.png"), auto;
+  cursor: url("/cursor.png"), auto;
 }

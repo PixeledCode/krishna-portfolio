@@ -97,7 +97,7 @@ function App() {
           </div>
           <a href="#projects" className="hidden sm:block">
             <img
-              src="/src/assets/krishna.png"
+              src="/krishna.png"
               alt=""
               width={300}
               className="absolute right-7 -bottom-8"
@@ -168,11 +168,7 @@ function App() {
                 <a href={`emailto:${data?.email}`}>{data?.email}</a>
               </div>
             </div>
-            <img
-              src="/src/assets/cup.gif"
-              alt=""
-              className="w-32 hidden sm:block"
-            />
+            <img src="/cup.gif" alt="" className="w-32 hidden sm:block" />
           </div>
           <p className="mt-12 sm:mt-24 text-sm">&#169; {data?.credits}</p>
         </div>
