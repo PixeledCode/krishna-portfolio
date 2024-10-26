@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #f74b01;
+  --color-bg: #ffffff;
+  --color-light: #fff8ef;
+  --color-dark: #667d17;
+  --color-text: #000000;
+  --color-text-on-bg: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Nunito", sans-serif;
+  text-wrap: pretty;
+}
+.outline-text {
+  transition: -webkit-text-stroke 0.2s, -webkit-text-fill-color 0.2s;
+}
+
+.outline-text:hover {
+  -webkit-text-stroke: 3px var(--color-dark);
+  -webkit-text-fill-color: white;
+}
+
+.link {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.link_underline {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s;
+  display: block;
+  transform: translateX(-100%);
+  transition: transform 0.3s;
+}
+
+.link:hover .link_underline {
+  transform: translateX(0);
+}
+
+.cursor {
+  cursor: url("./assets/cursor.png"), auto;
+}
